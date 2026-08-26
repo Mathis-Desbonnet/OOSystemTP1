@@ -3,9 +3,7 @@ import com.tpoosystem.tp1.data.Car;
 import com.tpoosystem.tp1.data.Dates;
 import com.tpoosystem.tp1.service.RentalService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
