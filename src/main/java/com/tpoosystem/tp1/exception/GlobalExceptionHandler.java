@@ -1,8 +1,5 @@
-package com.tpoosystem.tp1.web;
+package com.tpoosystem.tp1.exception;
 
-import com.tpoosystem.tp1.exception.CannotRentCarException;
-import com.tpoosystem.tp1.exception.CarAlreadyRentedException;
-import com.tpoosystem.tp1.exception.CarNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
