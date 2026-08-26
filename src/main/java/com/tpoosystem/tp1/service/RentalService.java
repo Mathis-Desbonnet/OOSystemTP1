@@ -10,6 +10,6 @@ public interface RentalService {
 
     List<Car> getAllCars();
     Car getCarFromPlateNumber(String plateNumber) ;
-    String getCarFromPlateNumber(@PathVariable("plateNumber") String plateNumber, @RequestParam(value = "rent", required = true) boolean rent, @RequestBody Dates dates);
-
+    String getCarFromPlateNumber(String plateNumber, boolean rent, Dates dates);
+    String addCar(Car car);
 }

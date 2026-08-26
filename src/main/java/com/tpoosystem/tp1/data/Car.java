@@ -11,9 +11,6 @@ public class Car {
     private float price;
 
     public Car() {
-        plateNumber = "";
-        brand = "";
-        price = 0;
     }
 
     public Car(String plateNumber, String brand, float price) {

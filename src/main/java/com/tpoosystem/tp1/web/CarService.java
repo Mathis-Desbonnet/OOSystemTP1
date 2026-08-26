@@ -30,5 +30,9 @@ public class CarService {
         return rentalService.getCarFromPlateNumber(plateNumber, rent, dates);
     }
 
+    @PostMapping("/addCar")
+    String addCar(@RequestBody Car car) {
+        return rentalService.addCar(car);
+    }
 
 }

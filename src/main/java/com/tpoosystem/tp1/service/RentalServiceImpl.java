@@ -76,5 +76,9 @@ public class RentalServiceImpl implements RentalService{
         throw new CannotRentCarException();
     }
 
+    public String addCar(Car car) {
+        allCars.add(car);
+        return "Correctly added a car";
+    }
 
 }
