@@ -60,7 +60,6 @@ public class RentalServiceImpl implements RentalService{
                     throw new CarNotFoundException(plateNumber);
                 }
             }
-            throw new CannotRentCarException();
         } else {
             for (Car car : allCars) {
                 if (car.getPlateNumber().equals(plateNumber)) {
@@ -73,8 +72,8 @@ public class RentalServiceImpl implements RentalService{
                     }
                 }
             }
-            throw new CannotRentCarException();
         }
+        throw new CannotRentCarException();
     }
 
 

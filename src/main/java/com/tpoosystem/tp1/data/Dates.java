@@ -7,9 +7,6 @@ public class Dates {
     private LocalDate endDate;
 
     public Dates() {
-        startDate = LocalDate.now();
-        endDate = LocalDate.now();
-        endDate = endDate.plusMonths(1);
     }
 
     public Dates(String startDate, String endDate) {
@@ -24,4 +21,13 @@ public class Dates {
     public LocalDate getEndDate() {
         return endDate;
     }
+
+    public void setStartDate(String startDate) {
+        this.startDate = LocalDate.parse(startDate);
+    }
+
+    public void setEndDate(String endDate) {
+        this.endDate = LocalDate.parse(endDate);
+    }
+
 }
