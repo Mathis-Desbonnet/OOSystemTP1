@@ -24,8 +24,8 @@ public class CarService {
     }
 
     @PutMapping("/cars/{plateNumber}")
-    String getCarFromPlateNumber(@PathVariable("plateNumber") String plateNumber, @RequestParam(value = "rent", required = true) boolean rent, @RequestBody Dates dates) {
-        return rentalService.getCarFromPlateNumber(plateNumber, rent, dates);
+    String updateCarRentFromPlateNumber(@PathVariable("plateNumber") String plateNumber, @RequestParam(value = "rent", required = true) boolean rent, @RequestBody Dates dates) {
+        return rentalService.updateCarRentFromPlateNumber(plateNumber, rent, dates);
     }
 
     @PostMapping("/addCar")

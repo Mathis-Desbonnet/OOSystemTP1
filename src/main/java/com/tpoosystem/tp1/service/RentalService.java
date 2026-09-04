@@ -9,6 +9,6 @@ public interface RentalService {
 
     List<Car> getAllCars();
     Car getCarFromPlateNumber(String plateNumber) ;
-    String getCarFromPlateNumber(String plateNumber, boolean rent, Dates dates);
+    String updateCarRentFromPlateNumber(String plateNumber, boolean rent, Dates dates);
     String addCar(Car car);
 }
